@@ -9,3 +9,16 @@
   <% end %>
 </ul>
 
+<h1>Articles</h1>
+
+<ul>
+  <% @welcome.each do |welcome| %>
+    <li>
+      <a href="/welcome/<%= welcome.id %>">
+        <%= welcome.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+
